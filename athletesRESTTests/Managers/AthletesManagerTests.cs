@@ -9,6 +9,9 @@ namespace athletesREST.Managers.Tests
     public class AthletesManagerTests
     {
         [TestMethod]
+        // Single test method to test ALL manager methods.
+        // Normally we would make a test method for each method to be tested.
+        // However in this case it might not work since we cannot control the execution order of the test methods.
         public void TestItAll()
         {
             AthletesManager manager = new AthletesManager();
